@@ -28,7 +28,6 @@ export default function Home() {
             }}
             className="col-span-12 flex flex-col gap-4 lg:col-span-6"
           >
-            {/* <h1 className="text-8xl font-bold text-green-400">こんにちは!</h1> */}
             <Title />
             <motion.p
               initial={{ opacity: 0 }}
