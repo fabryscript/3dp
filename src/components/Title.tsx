@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { cubicBezier, motion } from "framer-motion";
 
 const GREETINGS = [
   "Hello",
@@ -32,6 +32,8 @@ function Title() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentGreeting, setCurrentGreeting] = useState(GREETINGS[0]);
 
+  const changeBezier = cubicBezier(0.15, 0.32, 0.82, -0.05);
+
   useEffect(() => {
     const interval = setInterval(() => {
       const newIndex = (currentIndex + 1) % GREETINGS.length;
@@ -54,7 +56,7 @@ function Title() {
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 4.15, ease: changeBezier }}
         className="text-8xl font-bold text-red-500"
       >
         {currentGreeting}
