@@ -32,7 +32,7 @@ export default function Home() {
             <Title />
             <motion.p
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              animate={{ opacity: 0.7 }}
               transition={{ duration: 1.5 }}
               className="ml-2 text-3xl"
             >
