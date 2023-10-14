@@ -27,8 +27,10 @@ export default function Home() {
             <pointLight position={[-3, 3, 1]} />
             <pointLight position={[2, 15, 2]} />
             <OrbitControls
-              minDistance={8}
-              maxDistance={8}
+              maxPolarAngle={1.3} // disable scrolling on the y axis
+              minPolarAngle={1.3} // disable scrolling on the y axis
+              minDistance={8} // disable wheel scrolling
+              maxDistance={8} // disable wheel scrolling
               autoRotate
               autoRotateSpeed={5}
             />
