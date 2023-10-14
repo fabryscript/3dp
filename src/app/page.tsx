@@ -36,7 +36,7 @@ export default function Home() {
               transition={{ duration: 1.5 }}
               className="ml-2 text-3xl"
             >
-              I&apos;m Fabrizio. A web developer based in Milazzo, Italy.
+              I&apos;m Fabrizio. A web developer based in Milazzo, Italy 🇮🇹
             </motion.p>
           </motion.div>
           <Suspense fallback={<Loading />}>
