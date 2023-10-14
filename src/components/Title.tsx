@@ -51,13 +51,13 @@ function Title() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex gap-2"
+      className="flex flex-col gap-2 lg:flex-row"
     >
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4.15, ease: changeBezier }}
-        className="text-8xl font-bold text-red-500"
+        className="text-8xl font-bold text-red-400"
       >
         {currentGreeting}
       </motion.h1>
