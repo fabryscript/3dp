@@ -7,7 +7,8 @@ function Model() {
   let { scene } = useGLTF("/images/neko/scene.gltf");
   useEffect(() => {
     scene.children[0].translateZ(-1);
-  }, [scene.children]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return <primitive object={scene} />;
 }
