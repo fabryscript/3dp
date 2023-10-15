@@ -51,7 +51,9 @@ export default function Home() {
               <ul className="relative z-10 mt-12 flex items-center gap-6 lg:flex-row">
                 {socials.map(({ href, icon }) => (
                   <Link key={href} href={href} target="_blank">
-                    <li className="flex items-center gap-2 p-4">{icon}</li>
+                    <li className="flex items-center gap-2 p-4 transition-transform duration-300 hover:scale-125">
+                      {icon}
+                    </li>
                   </Link>
                 ))}
               </ul>
