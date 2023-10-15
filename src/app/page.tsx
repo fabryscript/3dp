@@ -37,17 +37,12 @@ export default function Home() {
           <Navbar />
           <div className="relative grid h-screen grid-cols-12 items-center px-2 max-lg:mt-16 max-lg:text-center lg:px-10">
             <motion.div
-              className={`animate-fadein relative col-span-12 flex flex-col gap-4 max-lg:items-center lg:col-span-6`}
+              className={`relative col-span-12 flex flex-col gap-4 max-lg:items-center lg:col-span-6`}
             >
               <Title />
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.9 }}
-                transition={{ duration: 1.5 }}
-                className="z-10 ml-2 text-2xl font-medium lg:text-3xl"
-              >
+              <p className="z-10 ml-2 text-2xl font-medium lg:text-3xl">
                 I&apos;m Fabrizio. A web developer based in Milazzo, Italy 🇮🇹
-              </motion.p>
+              </p>
               <ul className="relative z-10 mt-12 flex items-center gap-6 lg:flex-row">
                 {socials.map(({ href, icon }) => (
                   <Link key={href} href={href} target="_blank">
