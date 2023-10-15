@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 function Title() {
   return (
     <div className="relative z-10 flex flex-col gap-2 lg:flex-row">
-      <h1 className="text-7xl font-bold text-red-400 lg:text-8xl">Ciao</h1>
+      <h1 className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-7xl font-bold text-transparent lg:text-8xl">
+        Ciao
+      </h1>
       <motion.span
         initial={{ rotate: 10, scale: 1.2, opacity: 0 }}
         animate={{
