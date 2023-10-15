@@ -20,9 +20,7 @@ const GREETINGS = [
   "Salut",
   "హలో",
   "हॅलो",
-  "Merhaba",
   "ஹலோ",
-  "Xin chào",
   "Ciao",
 ];
 
@@ -74,7 +72,7 @@ function Title() {
           type: "spring",
           stiffness: 500,
           duration: 3,
-          delay: 4.5, // change duration * greetings duration
+          delay: 4, // change duration * greetings duration
         }}
         className="text-8xl"
       >
