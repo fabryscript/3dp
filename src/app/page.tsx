@@ -55,6 +55,12 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              {/* <button
+                type="button"
+                className="ml-2 min-h-[60px] w-[50%] rounded-2xl border border-red-500 px-6"
+              >
+                Discover
+              </button> */}
               <ColorBlur className="top-0 h-28 w-28 bg-red-500 blur-[200px]" />
               <ColorBlur className="-bottom-[500px] h-[300px] w-[300px] bg-red-500 blur-[400px]" />
             </motion.div>
