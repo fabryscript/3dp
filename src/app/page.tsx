@@ -63,7 +63,7 @@ export default function Home() {
               <Suspense fallback={<Loading />}>
                 <Canvas className="max-h-[600px] flex-1 max-lg:-mt-24">
                   <Model />
-                  <PerspectiveCamera makeDefault position={[0, 2.5, 8]} />
+                  <PerspectiveCamera makeDefault position={[0, 0.25, 8]} />
                   <ambientLight intensity={0.5} color={"#FFFFFF"} />
                   <directionalLight
                     intensity={1}
