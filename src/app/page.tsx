@@ -45,11 +45,14 @@ export default function Home() {
               </p>
               <ul className="relative z-10 mt-12 flex items-center gap-6 lg:flex-row">
                 {socials.map(({ href, icon }) => (
-                  <Link key={href} href={href} target="_blank">
-                    <li className="flex items-center gap-2 p-4 transition-transform duration-300 hover:scale-125">
+                  <li
+                    key={href}
+                    className="flex items-center gap-2 transition-transform duration-300 hover:scale-125"
+                  >
+                    <Link href={href} target="_blank" className="p-4">
                       {icon}
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
               <ColorBlur className="top-0 h-28 w-28 bg-red-500 blur-[200px]" />
