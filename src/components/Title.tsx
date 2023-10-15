@@ -50,13 +50,13 @@ function Title() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col gap-2 lg:flex-row"
+      className="relative z-10 flex flex-col gap-2 lg:flex-row"
     >
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 4.15, ease: changeBezier }}
-        className="text-8xl font-bold text-red-400"
+        className="text-7xl font-bold text-red-400 lg:text-8xl"
       >
         {GREETINGS[currentIndex]}
       </motion.h1>
@@ -73,7 +73,7 @@ function Title() {
           duration: 3,
           delay: 4, // change duration * greetings duration
         }}
-        className="text-8xl"
+        className="text-8xl max-lg:hidden"
       >
         👋🏼
       </motion.span>
