@@ -74,10 +74,17 @@ export default function Home() {
                 <Canvas className="max-h-[600px] flex-1 pt-12 max-lg:-mt-24">
                   <Model />
                   <PerspectiveCamera makeDefault position={[0, 2.5, 8]} />
-                  <ambientLight intensity={2.5} />
-                  <pointLight position={[1, 1, 2]} />
-                  <pointLight position={[-3, 3, 1]} />
-                  <pointLight position={[2, 15, 2]} />
+                  <ambientLight intensity={0.5} color={"#FFFFFF"} />
+                  <directionalLight
+                    intensity={1}
+                    color={"#FFFFFF"}
+                    position={[1, 1, 2]}
+                  />
+                  <directionalLight
+                    intensity={1}
+                    color={"#FFFFFF"}
+                    position={[1, 1, -1]}
+                  />
                   <OrbitControls
                     maxPolarAngle={1.3} // disable scrolling on the y axis
                     minPolarAngle={1.3} // disable scrolling on the y axis
