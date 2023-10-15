@@ -37,17 +37,15 @@ export default function Home() {
           <Navbar />
           <div className="relative grid h-screen grid-cols-12 items-center px-2 max-lg:mt-16 max-lg:text-center lg:px-10">
             <motion.div
-              initial={{ y: 200 }}
-              animate={{ y: 0 }}
-              transition={{
-                duration: 0.2,
-                ease: "easeInOut",
-                type: "spring",
-                stiffness: 100,
-                staggerChildren: 0.3,
-                delayChildren: 1,
-              }}
-              className="relative col-span-12 flex flex-col gap-4 max-lg:items-center lg:col-span-6"
+              // initial={{ y: 200 }}
+              // animate={{ y: 0 }}
+              // transition={{
+              //   duration: 0.2,
+              //   ease: "easeInOut",
+              //   type: "spring",
+              //   stiffness: 100,
+              // }}
+              className={`animate-fadein relative col-span-12 flex flex-col gap-4 max-lg:items-center lg:col-span-6`}
             >
               <Title />
               <motion.p
