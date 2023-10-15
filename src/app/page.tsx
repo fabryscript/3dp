@@ -55,10 +55,10 @@ export default function Home() {
               <ColorBlur className="top-0 h-28 w-28 bg-red-500 blur-[200px]" />
               <ColorBlur className="-bottom-[500px] h-[300px] w-[300px] bg-red-500 blur-[400px]" />
             </motion.div>
-            <div className="relative col-span-12 flex h-full w-full lg:col-span-6">
+            <div className="relative col-span-12 flex h-full min-h-[410px] w-full lg:col-span-6">
               <ColorBlur className="right-24 top-48 h-[300px] w-[300px] bg-red-500 blur-[500px]" />
               <Suspense fallback={<Loading />}>
-                <Canvas className="max-h-[600px] flex-1 pt-12 max-lg:-mt-24">
+                <Canvas className="max-h-[600px] flex-1 max-lg:-mt-24">
                   <Model />
                   <PerspectiveCamera makeDefault position={[0, 2.5, 8]} />
                   <ambientLight intensity={0.5} color={"#FFFFFF"} />
