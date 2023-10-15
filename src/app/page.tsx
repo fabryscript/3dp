@@ -50,16 +50,16 @@ export default function Home() {
               <Title />
               <motion.p
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 0.7 }}
+                animate={{ opacity: 0.9 }}
                 transition={{ duration: 1.5 }}
-                className="z-10 ml-2 text-3xl"
+                className="z-10 ml-2 text-2xl font-medium lg:text-3xl"
               >
                 I&apos;m Fabrizio. A web developer based in Milazzo, Italy 🇮🇹
               </motion.p>
-              <ul className="z-10 mt-12 flex items-center gap-10 lg:ml-4 lg:flex-row">
+              <ul className="relative z-10 mt-12 flex items-center gap-6 lg:flex-row">
                 {socials.map(({ href, icon }) => (
                   <Link key={href} href={href} target="_blank">
-                    <li className="flex items-center gap-2">{icon}</li>
+                    <li className="flex items-center gap-2 p-4">{icon}</li>
                   </Link>
                 ))}
               </ul>
