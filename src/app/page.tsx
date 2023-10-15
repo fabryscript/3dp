@@ -77,6 +77,7 @@ export default function Home() {
                     minPolarAngle={1.3} // disable scrolling on the y axis
                     minDistance={8} // disable wheel scrolling
                     maxDistance={8} // disable wheel scrolling
+                    enableZoom={false}
                     autoRotate
                     autoRotateSpeed={5}
                   />
