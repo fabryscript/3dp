@@ -28,7 +28,6 @@ const CHANGE_DURATION = 200;
 
 function Title() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentGreeting, setCurrentGreeting] = useState(GREETINGS[0]);
 
   const changeBezier = cubicBezier(0.15, 0.32, 0.82, -0.05);
 
