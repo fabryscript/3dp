@@ -75,7 +75,7 @@ export default function Home() {
                     color={"#FFFFFF"}
                     position={[1, 1, -1]}
                   />
-                  <OrbitControls
+                  {/* <OrbitControls
                     maxPolarAngle={1.3} // disable scrolling on the y axis
                     minPolarAngle={1.3} // disable scrolling on the y axis
                     minDistance={8} // disable wheel scrolling
@@ -83,7 +83,7 @@ export default function Home() {
                     enableZoom={false}
                     autoRotate
                     autoRotateSpeed={5}
-                  />
+                  /> */}
                 </Canvas>
               </Suspense>
             </div>
