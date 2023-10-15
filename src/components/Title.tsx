@@ -1,50 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { cubicBezier, motion } from "framer-motion";
-
-const GREETINGS = [
-  "Hello",
-  "你好",
-  "Hola",
-  "नमस्ते",
-  "مرحبا",
-  "হ্যালো",
-  "Olá",
-  "привет",
-  "やっほー",
-  "ਹੈਲੋ",
-  "Hallo",
-  "Hallo",
-  "你好",
-  "Salut",
-  "హలో",
-  "हॅलो",
-  "ஹலோ",
-  "Ciao",
-];
-
-const CHANGE_DURATION = 200;
+import React from "react";
+import { motion } from "framer-motion";
 
 function Title() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const changeBezier = cubicBezier(0.15, 0.32, 0.82, -0.05);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => {
-        if (prev === GREETINGS.length - 1) {
-          clearInterval(interval);
-        }
-        const newIndex = (prev + 1) % GREETINGS.length;
-        return newIndex;
-      });
-    }, CHANGE_DURATION);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -52,14 +11,7 @@ function Title() {
       transition={{ duration: 1 }}
       className="relative z-10 flex flex-col gap-2 lg:flex-row"
     >
-      <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 4.15, ease: changeBezier }}
-        className="text-7xl font-bold text-red-400 lg:text-8xl"
-      >
-        {GREETINGS[currentIndex]}
-      </motion.h1>
+      <h1 className="text-7xl font-bold text-red-400 lg:text-8xl">Ciao</h1>
       <motion.span
         initial={{ rotate: 10, scale: 1.2, opacity: 0 }}
         animate={{
@@ -70,8 +22,7 @@ function Title() {
         transition={{
           type: "spring",
           stiffness: 500,
-          duration: 3,
-          delay: 4, // change duration * greetings duration
+          delay: 1,
         }}
         className="text-8xl max-lg:hidden"
       >
