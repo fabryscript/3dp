@@ -36,15 +36,17 @@ function Title() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const newIndex = (currentIndex + 1) % GREETINGS.length;
-      setCurrentIndex(newIndex);
-      setCurrentGreeting(GREETINGS[newIndex]);
+      setCurrentIndex((prev) => {
+        if (prev === GREETINGS.length - 1) {
+          clearInterval(interval);
+        }
+        const newIndex = (prev + 1) % GREETINGS.length;
+        return newIndex;
+      });
     }, CHANGE_DURATION);
-    if (currentIndex === GREETINGS.length - 1) {
-      clearInterval(interval);
-    }
+
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
   return (
     <motion.div
@@ -59,7 +61,7 @@ function Title() {
         transition={{ duration: 4.15, ease: changeBezier }}
         className="text-8xl font-bold text-red-400"
       >
-        {currentGreeting}
+        {GREETINGS[currentIndex]}
       </motion.h1>
       <motion.span
         initial={{ rotate: 10, scale: 1.2, opacity: 0 }}
