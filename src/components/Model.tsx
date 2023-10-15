@@ -13,7 +13,7 @@ function Model() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useFrame((_, delta) => (scene.children[0].rotation.z += delta));
+  useFrame((_, delta) => (scene.children[0].rotation.z += delta * 0.2));
 
   return <primitive object={scene} />;
 }
