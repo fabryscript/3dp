@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -50,9 +51,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} overflow-x-hidden bg-black p-4 text-white`}
-      >
+      <body className={`${poppins.className} flex min-h-full flex-col`}>
+        <Navbar />
         {children}
       </body>
     </html>

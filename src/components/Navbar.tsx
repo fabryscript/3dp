@@ -1,19 +1,38 @@
-import Image from "next/image";
 import React from "react";
-import ColorBlur from "./ColorBlur";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 function Navbar() {
   return (
-    <div className="relative left-0 right-0 top-4 flex flex-row items-center justify-center px-6">
-      <ColorBlur className="bottom-52 left-0 h-[300px] w-[300px] bg-yellow-500 blur-[200px]" />
-      <Image src={"/images/sig.png"} alt="Signature" width={70} height={70} />
-      {/* <button
-        type="button"
-        className="flex max-h-14 flex-row items-center justify-center rounded-2xl border border-red-500 px-6 py-3"
-      >
-        Menu
-      </button> */}
-    </div>
+    <header>
+      <div className="absolute left-0 right-0 top-2 z-40 pt-14">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <div className="flex items-center justify-between">
+              <Image
+                src={"/images/sig.png"}
+                alt="Signature"
+                className="invert filter"
+                width={80}
+                height={80}
+              />
+              <div className="flex items-center gap-x-8">
+                <Link
+                  className="inline-flex min-h-[36px] items-center rounded-full bg-neutral-950 px-4 py-1.5 text-sm text-white transition hover:bg-neutral-800"
+                  href={"#footer"}
+                >
+                  Get in touch
+                </Link>
+                <button className="group -m-2.5 rounded-full p-2.5 transition hover:bg-neutral-950/10">
+                  <Menu />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }
 
