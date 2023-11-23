@@ -30,7 +30,7 @@ export default function Home() {
           <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 md:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="max-w-3xl">
-                <h1 className="text-5xl font-medium leading-9 tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+                <h1 className="text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl lg:leading-9">
                   I&apos;m Fabrizio Piperno. A web developer based in Milazzo,
                   Italy.
                 </h1>
@@ -41,7 +41,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+          <div className="mx-2 mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:max-w-none">
                 <div className="flex items-center gap-x-8">
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <ul
                   role="list"
-                  className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+                  className="mt-10 flex flex-wrap items-center justify-between gap-x-8 gap-y-10 max-sm:justify-center"
                 >
                   <li>
                     <Link
