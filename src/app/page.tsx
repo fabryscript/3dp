@@ -204,14 +204,17 @@ export default function Home() {
                     </Link>
                   </article>
                 </div>
-                {/* <div className="flex">
+                <div className="flex">
                   <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
-                    <Link
-                      href={"https://cosmoshop.nabla.studio/"}
-                      target="_blank"
-                    >
+                    <Link href={"https://quirks.nabla.studio/"} target="_blank">
                       <h3>
-                        <ShoppingBag width={36} height={36} />
+                        <Image
+                          src={"/images/quirks.svg"}
+                          alt="Quirks logo"
+                          width={36}
+                          height={36}
+                          className="min-h-[36px] invert filter"
+                        />
                       </h3>
                       <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                         <time dateTime="2023" className="font-semibold">
@@ -221,17 +224,17 @@ export default function Home() {
                         <span>Work</span>
                       </p>
                       <p className="font-display mt-6 text-2xl font-semibold text-neutral-950">
-                        Unlock a universe of sales with NFT-powered e-commerce.
+                        A library for developers to focus entirely on dApp
+                        creation.
                       </p>
                       <p className="mt-4 text-base text-neutral-600">
-                        Cosmoshop is a platform for modern web3 e-commerce
-                        solutions. Using strategies such as Token Gating, NFT
-                        Discounts, Loyalty Plans and Crypto Payments to boost
-                        your e-commerce revenue and engagement
+                        Quirks is a framework-agnostic, TypeScript library that
+                        focuses on connecting wallets and your dApp with minimal
+                        effort, while weighing only 2kb.
                       </p>
                     </Link>
                   </article>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
