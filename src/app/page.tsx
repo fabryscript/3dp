@@ -29,7 +29,7 @@ export default function Home() {
         <main className="w-full flex-auto">
           <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 md:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
-              <div className="max-w-3xl">
+              <div className="mx-auto max-w-3xl text-left sm:text-center">
                 <h1 className="text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
                   Hi, I&apos;m Fabrizio Piperno
                 </h1>
@@ -289,7 +289,10 @@ export default function Home() {
                 />
               </Link>
               <p className="text-sm text-neutral-700">
-                © {new Date().getFullYear()} Fabrizio Piperno. Made with ❤️ in{" "}
+                © {new Date().getFullYear()} Fabrizio Piperno.
+              </p>
+              <p className="text-sm text-neutral-700">
+                Made with ❤️ in{" "}
                 <span>
                   <Link
                     target="_blank"
