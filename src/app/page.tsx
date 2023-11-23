@@ -250,19 +250,18 @@ export default function Home() {
                       </Link>
                     </div>
                     <div className="mt-10 flex justify-center border-t border-white/10 pt-10">
-                      <ul
-                        role="list"
-                        className="flex w-full items-center justify-center gap-11 md:justify-start md:gap-20"
-                      >
-                        {socials.map(({ href, icon }) => (
-                          <Link
-                            href={href}
-                            target="_blank"
-                            key={href}
-                            className="flex flex-col items-center justify-center"
-                          >
-                            {icon}
-                          </Link>
+                      <ul className="flex w-full items-center justify-center gap-11 md:justify-start md:gap-20">
+                        {socials.map(({ href, icon, label }) => (
+                          <li key={href}>
+                            <Link
+                              aria-label={`${label} link`}
+                              href={href}
+                              target="_blank"
+                              className="flex flex-col items-center justify-center"
+                            >
+                              {icon}
+                            </Link>
+                          </li>
                         ))}
                       </ul>
                     </div>
@@ -292,7 +291,7 @@ export default function Home() {
                 <span>
                   <Link
                     target="_blank"
-                    className="text-blue-700"
+                    className="text-blue-800 underline"
                     href={"https://en.wikipedia.org/wiki/Milazzo"}
                   >
                     Milazzu
