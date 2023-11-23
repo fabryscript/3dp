@@ -9,6 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fabryscript.dev"),
   title: "fabryscript",
   description: "Web developer based in Milazzo, Italy 🇮🇹",
   keywords: [
