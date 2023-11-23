@@ -127,8 +127,8 @@ export default function Home() {
                 </h2>
                 <div className="mt-6 text-xl text-neutral-600">
                   <p>
-                    I do believe that harmony, order and an organized workflow
-                    are the base elements through which I can build the best
+                    I believe that harmony, order and an organized workflow are
+                    the base elements through which I can craft the best
                     experiences.
                   </p>
                 </div>
