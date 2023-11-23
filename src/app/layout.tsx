@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} flex min-h-full flex-col`}>
-        <div className="fixed top-0 z-[100] flex min-h-[40px] w-full flex-col items-center justify-center bg-yellow-300">
+        <div className="fixed top-0 z-[100] flex min-h-[40px] w-full flex-col items-center justify-center bg-yellow-300 text-center">
           <p className="text-xl font-semibold">🚧 Work in progress 🚧</p>
           <p>
             Hey! Thank you for passing by! I just wanted to let you know that
