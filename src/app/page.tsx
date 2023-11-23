@@ -105,7 +105,7 @@ export default function Home() {
           <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:mt-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="max-w-2xl">
-                <h2 className="font-display block text-4xl tracking-tight text-neutral-950 [text-wrap:balance] sm:text-5xl">
+                <h2 className="block text-4xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-5xl">
                   Using harmony as the key for the best experience
                 </h2>
                 <div className="mt-6 text-xl text-neutral-600">
