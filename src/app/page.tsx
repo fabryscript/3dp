@@ -237,7 +237,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:mt-40 lg:px-8">
+          <div className="mx-2 mt-24 max-w-7xl px-6 sm:mx-auto sm:mt-32 lg:mt-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
                 <div className="mx-auto max-w-4xl">
