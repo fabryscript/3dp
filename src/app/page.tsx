@@ -40,14 +40,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mx-2 mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+          <div className="mx-2 mt-24 py-20 sm:mt-32 sm:py-32 lg:mt-56">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:max-w-none">
                 <div className="flex items-center gap-x-8">
-                  <h2 className="text-center text-sm tracking-wider text-white sm:text-left">
+                  <h2 className="text-center text-sm font-semibold sm:text-left">
                     I&apos;ve worked with amazing people
                   </h2>
-                  <div className="h-px flex-auto bg-neutral-800" />
+                  <div className="h-0.5 flex-auto bg-neutral-800" />
                 </div>
                 <ul
                   role="list"
@@ -61,10 +61,11 @@ export default function Home() {
                       <Image
                         src={"/images/nabla.svg"}
                         alt="Nabla logo"
-                        width={90}
+                        width={70}
                         height={40}
+                        className="invert filter"
                       />
-                      <p className="text-2xl font-medium text-white">nabla</p>
+                      <p className="text-2xl font-medium">nabla</p>
                     </Link>
                   </li>
                   <li>
@@ -78,7 +79,7 @@ export default function Home() {
                         width={40}
                         height={40}
                       />
-                      <p className="text-2xl font-medium text-white">Osmosis</p>
+                      <p className="text-2xl font-medium">Osmosis</p>
                     </Link>
                   </li>
                   <li>
@@ -92,9 +93,7 @@ export default function Home() {
                         width={90}
                         height={40}
                       />
-                      <p className="text-2xl font-medium text-white">
-                        Studio AICO
-                      </p>
+                      <p className="text-2xl font-medium">Studio AICO</p>
                     </Link>
                   </li>
                   <li>
@@ -107,11 +106,8 @@ export default function Home() {
                         alt="Nabla logo"
                         width={50}
                         height={43}
-                        className="invert filter"
                       />
-                      <p className="text-2xl font-medium text-white">
-                        Gipsy Tattoo
-                      </p>
+                      <p className="text-2xl font-medium">Gipsy Tattoo</p>
                     </Link>
                   </li>
                 </ul>
