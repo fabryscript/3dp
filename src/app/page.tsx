@@ -30,13 +30,12 @@ export default function Home() {
           <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 md:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="max-w-3xl">
-                <h1 className="text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl lg:leading-9">
-                  I&apos;m Fabrizio Piperno. A web developer based in Milazzo,
-                  Italy.
+                <h1 className="text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+                  Hi, I&apos;m Fabrizio Piperno
                 </h1>
                 <p className="mt-6 text-xl text-neutral-600">
-                  I&apos;m a developer from Italy specialized in web
-                  development, with vast knowledge of React and its ecosystem
+                  I&apos;m an Italian developer specialized in web and mobile
+                  technologies, with vast knowledge of React and its ecosystem.
                 </p>
               </div>
             </div>
