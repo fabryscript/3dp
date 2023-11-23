@@ -243,7 +243,7 @@ export default function Home() {
                     </h2>
                     <div className="mt-6 flex">
                       <Link
-                        href={"/contact"}
+                        href={"mailto:fabrizioemanuelepiperno@nabla.studio"}
                         className="inline-flex rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
                       >
                         <span className="relative top-px">Contact me</span>

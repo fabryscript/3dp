@@ -20,7 +20,7 @@ function Navbar() {
               <div className="flex items-center gap-x-8">
                 <Link
                   className="inline-flex min-h-[36px] items-center rounded-full bg-neutral-950 px-4 py-1.5 text-sm text-white transition hover:bg-neutral-800"
-                  href={"#footer"}
+                  href={"mailto:fabrizioemanuelepiperno@nabla.studio"}
                 >
                   Get in touch
                 </Link>
