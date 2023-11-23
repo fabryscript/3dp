@@ -24,9 +24,9 @@ function Navbar() {
                 >
                   Get in touch
                 </Link>
-                <button className="group -m-2.5 rounded-full p-2.5 transition hover:bg-neutral-950/10">
+                {/* <button className="group -m-2.5 rounded-full p-2.5 transition hover:bg-neutral-950/10">
                   <Menu />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
