@@ -102,7 +102,7 @@ export default function Home() {
                       className="inline-flex items-center gap-2"
                     >
                       <Image
-                        src={"/images/gipsy.png"}
+                        src={"/images/gipsy.webp"}
                         alt="Nabla logo"
                         width={50}
                         height={43}
@@ -141,7 +141,7 @@ export default function Home() {
                     >
                       <h3>
                         <Image
-                          src={"/images/cosmoshop.png"}
+                          src={"/images/cosmoshop.webp"}
                           alt="Cosmoshop logo"
                           width={36}
                           height={36}
@@ -276,7 +276,7 @@ export default function Home() {
             <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
               <Link href={"/"}>
                 <Image
-                  src={"/images/sig.png"}
+                  src={"/images/sig.webp"}
                   className="invert filter"
                   alt="Signature"
                   width={80}

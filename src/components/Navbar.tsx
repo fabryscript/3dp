@@ -11,7 +11,7 @@ function Navbar() {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="flex items-center justify-between">
               <Image
-                src={"/images/sig.png"}
+                src={"/images/sig.webp"}
                 alt="Signature"
                 className="invert filter"
                 width={80}
