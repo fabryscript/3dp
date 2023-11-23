@@ -41,7 +41,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded-4xl mt-24 bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+          <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:max-w-none">
                 <div className="flex items-center gap-x-8">
@@ -55,7 +55,10 @@ export default function Home() {
                   className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
                 >
                   <li>
-                    <div className="inline-flex items-center gap-2">
+                    <Link
+                      href={"https://nabla.studio"}
+                      className="inline-flex items-center gap-2"
+                    >
                       <Image
                         src={"/images/nabla.svg"}
                         alt="Nabla logo"
@@ -63,10 +66,13 @@ export default function Home() {
                         height={40}
                       />
                       <p className="text-2xl font-medium text-white">nabla</p>
-                    </div>
+                    </Link>
                   </li>
                   <li>
-                    <div className="inline-flex items-center gap-2">
+                    <Link
+                      href={"https://osmosis.zone"}
+                      className="inline-flex items-center gap-2"
+                    >
                       <Image
                         src={"/images/osmosis.webp"}
                         alt="Osmosis logo"
@@ -74,29 +80,40 @@ export default function Home() {
                         height={40}
                       />
                       <p className="text-2xl font-medium text-white">Osmosis</p>
-                    </div>
+                    </Link>
                   </li>
                   <li>
-                    <div className="inline-flex items-center gap-2">
+                    <Link
+                      href={"https://studioaico.org/"}
+                      className="inline-flex items-center gap-2"
+                    >
                       <Image
-                        src={"/images/nabla.svg"}
+                        src={"/images/aico.svg"}
                         alt="Nabla logo"
                         width={90}
                         height={40}
                       />
-                      <p className="text-2xl font-medium text-white">nabla</p>
-                    </div>
+                      <p className="text-2xl font-medium text-white">
+                        Studio AICO
+                      </p>
+                    </Link>
                   </li>
                   <li>
-                    <div className="inline-flex items-center gap-2">
+                    <Link
+                      href={"https://www.gipsytattooshop.com/"}
+                      className="inline-flex items-center gap-2"
+                    >
                       <Image
-                        src={"/images/nabla.svg"}
+                        src={"/images/gipsy.png"}
                         alt="Nabla logo"
-                        width={90}
-                        height={40}
+                        width={50}
+                        height={43}
+                        className="invert filter"
                       />
-                      <p className="text-2xl font-medium text-white">nabla</p>
-                    </div>
+                      <p className="text-2xl font-medium text-white">
+                        Gipsy Tattoo
+                      </p>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -220,7 +237,7 @@ export default function Home() {
           </div>
           <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-32 lg:mt-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:max-w-none">
-              <div className="rounded-4xl -mx-6 bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
+              <div className="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
                 <div className="mx-auto max-w-4xl">
                   <div className="max-w-xl">
                     <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
